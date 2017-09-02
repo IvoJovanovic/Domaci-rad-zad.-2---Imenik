@@ -3,7 +3,8 @@ angular.module('eImenik').config(function ($stateProvider) {
 		.state('details', {
 			url: '/:firstName',
 			controller: 'detailsController',
-			template: `
+            template: `
+            <button ui-sref="studentsList">Svi učenici</button>    
             <h2>{{firstName + " " + lastName}}</h2>
             <p>Zaključna ocijena: {{finalGrade}}</p>
         `,
